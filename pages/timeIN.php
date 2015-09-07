@@ -5,9 +5,14 @@
 
 $firstname = $_POST['firstname'];
 $lastname = $_POST['lastname'];
+$middlename = $_POST['middlename'];
 $user_ID = $_POST['ID'];
-$name = $firstname." ".$lastname;
-$time=date("M d Y, g:i A");
+$middlename	= substr($middlename, 0,1);
+$name = $firstname." ".$middlename.". ".$lastname;
+$h = "-8";// Hour for time zone goes here e.g. +7 or -4, just remove the + or -
+$hm = $h * 60; 
+$ms = $hm * 60;
+$time=gmdate("M d Y, g:i A", time()+28800);
 
 
 $sql_insert = "INSERT INTO tracking (name, timeIN, user_ID) VALUES ('$name', '$time', '$user_ID')";

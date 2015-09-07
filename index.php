@@ -7,6 +7,7 @@
 			ADD
 			<form action="pages/add.php" method="post">
 				<input type="text" name="firstname" placeholder="Firstname" class="form-control" required>
+				<input type="text" name="middlename" placeholder="Middlename" class="form-control" required>
 				<input type="text" name="lastname" placeholder="Lastname" class="form-control" required>
 				<input type="text" name="address" placeholder="Address" class="form-control" required>
 				<input type="email" name="email" placeholder="Email" class="form-control" required>
@@ -50,6 +51,7 @@
 										<form action="pages/timeIN.php" method="POST">
 											<input type="hidden" name="ID" value="'.$row['ID'].'">
 											<input type="hidden" name="firstname" value="'.$row['firstname'].'">
+											<input type="hidden" name="middlename" value="'.$row['middlename'].'">
 											<input type="hidden" name="lastname" value="'.$row['lastname'].'">
 											<input type="submit" value="Time-In" class="btn btn-default">
 										</form>

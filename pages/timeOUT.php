@@ -2,7 +2,7 @@
 <?php include('header.php');?>
 <?php
 $user_ID = $_POST['ID'];
-$time=date("M d Y, g:i A");
+$time=gmdate("M d Y, g:i A", time()+28800);
 
 
 $sql_insert = "UPDATE tracking SET timeOUT='$time' WHERE user_ID='$user_ID' AND timeOUT=''";
