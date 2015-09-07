@@ -1,0 +1,27 @@
+.main{
+	margin-top:10px;
+}
+td{
+	padding: 10px;
+}
+.border{
+	border-bottom: 1px solid black;
+}
+
+.center{
+	position: relative;
+	top: 100px;
+	width: 50%;
+	margin: 0 auto;
+}
+
+@media (max-width: 767px){
+	.center{
+	width: 80%;
+}
+}
+
+#carform{
+	position: relative;
+	top:200px;
+}
