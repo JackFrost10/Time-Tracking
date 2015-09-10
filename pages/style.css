@@ -1,7 +1,4 @@
-.main{
-	margin-top:10px;
-}
-td{
+.main td{
 	padding: 10px;
 }
 .border{
@@ -23,5 +20,5 @@ td{
 
 #carform{
 	position: relative;
-	top:200px;
+	top:10px;
 }

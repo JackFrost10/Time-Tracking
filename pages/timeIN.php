@@ -18,11 +18,11 @@ $time=gmdate("M d Y, g:i A", time()+28800);
 $sql_insert = "INSERT INTO tracking (name, timeIN, user_ID) VALUES ('$name', '$time', '$user_ID')";
 if(mysql_query($sql_insert)){
 ?>
-	<a href="../index.php"><div class="alert alert-success center" role="alert"><b>Success</b> You have logged in successfully</div></a>
+	<a href="index.php"><div class="alert alert-success center" role="alert"><b>Success</b> You have logged in successfully</div></a>
 <?php
 }
 else{
 	echo "ERROR ". mysql_error();
-	echo '<a href="../index.php"><div class="alert alert-danger center" role="alert"><b>Oh snap!</b> Change a few things up and try submitting again.</div></a>';
+	echo '<a href="index.php"><div class="alert alert-danger center" role="alert"><b>Oh snap!</b> Change a few things up and try submitting again.</div></a>';
 }
 ?>
